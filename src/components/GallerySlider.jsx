@@ -125,7 +125,7 @@ const GallerySlider = () => {
             <div className="row justify-content-end mt-5">
                 <div className="col-lg-5 col-12">
                     <p className="para text-right">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
                     </p>
                     <a href="" className="main-btn right no-arrow white-btn">
                         <span>Discover the Possibilities</span>

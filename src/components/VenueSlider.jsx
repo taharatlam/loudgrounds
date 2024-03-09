@@ -58,9 +58,9 @@ const VenueSlider = () => {
         className="venue-swiper"
         ref={sliderRef}>
             {
-                [...Array(5)].map(function(){
+                [...Array(5)].map(function(item,index){
                     return(
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <VenueCard />
                         </SwiperSlide>
                     )

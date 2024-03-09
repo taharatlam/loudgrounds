@@ -228,7 +228,7 @@ export default function Home() {
               <div className="row justify-content-end mt-5">
                   <div className="col-lg-5 col-12">
                       <p className="para text-right">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
                       </p>
                       <a href="" className="main-btn right no-arrow white-btn">
                           <span>Discover the Possibilities</span>
@@ -247,9 +247,9 @@ export default function Home() {
               </div>
               <div className="row rogap-25 mt-5">
                 {
-                  [...Array(3)].map(item=>{
+                  [...Array(3)].map((item, index)=>{
                     return(
-                      <div className="col-lg-4 col-md-6 col-12">
+                      <div className="col-lg-4 col-md-6 col-12" key={index}>
                         <SlateCard />
                       </div>
                     )

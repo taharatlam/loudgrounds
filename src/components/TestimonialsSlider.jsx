@@ -58,9 +58,9 @@ const TestimonialsSlider = () => {
         className="test-slider"
         ref={sliderRef}>
             {
-                [...Array(5)].map(function(){
+                [...Array(5)].map(function(item,index){
                     return(
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <TestimonialCard />
                         </SwiperSlide>
                     )
