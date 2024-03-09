@@ -1,0 +1,145 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$main-color: #0F5E9C;
+$yellow: #FBEF39;
+$light-black: #252525;
+
+@font-face {
+    font-family: 'lg-head';
+    src: url('../fonts/bluecashews-3zgn3.otf');
+}
+@font-face {
+    font-family: 'cera-bold';
+    src: url('../fonts/cera-pro-bold.otf');
+}
+@font-face {
+    font-family: 'cera-medium';
+    src: url('../fonts/cera-pro-medium.otf');
+}
+@font-face {
+    font-family: 'cera';
+    src: url('../fonts/cerapro-regular.otf');
+}
+
+body, html{
+    color: white !important;
+    background: black !important;
+    // font-family: 'cera', sans-serif !important;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+}
+.text-right{
+    text-align: right;
+}
+.main-btn{
+    position: relative;
+    padding: 12px 23px;
+    background: $yellow;
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    max-width: max-content;
+
+    &.right{
+        margin-left: auto;
+        display: block;
+    }
+
+    &.no-arrow{
+
+        &:after{
+            display: none;
+        }
+    }
+
+    &.white-btn{
+        background: white;
+    }
+
+    &:after{
+        content: '';
+        // position: absolute;
+        // top: 50%;
+        // right: 0;
+        transform: translateY(-10%);
+        width: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        height: 20px;
+        background: url(../images/arrow-right.svg) center/contain no-repeat;
+    }
+
+    &.center{
+        margin: 0 auto;
+        display: block;
+        max-width: max-content;
+    }
+
+    span{
+        color: black;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &.white{
+        background: white;
+        
+        span{
+            color: $main-color;
+        }
+    }
+    &.link-only{
+        background: transparent;
+        padding: 0;
+
+        span{
+            color: white;
+        }
+
+        &:after{
+            filter: invert(100%);
+        }
+    }
+
+    &.yellow-btn{
+
+        span{
+            color: $yellow;
+        }
+
+        &:after{
+            filter: invert(0%);
+            background: url(../images/yellow-arrow.svg) center/contain no-repeat;
+        }
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'lg-head', sans-serif;
+
+    span{
+        font-family: 'lg-head', sans-serif;
+    }
+}
+.sec-head{
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 100%;
+
+    &.big{
+        font-size: 72px;
+    }
+}
+.sec{
+    padding: 6em 0px;
+}
