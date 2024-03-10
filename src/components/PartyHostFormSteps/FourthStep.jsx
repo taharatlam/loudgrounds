@@ -56,7 +56,7 @@ const FourthStep = () => {
                             {
                                 data && data.map((item,index)=>{
                                     return(
-                                    <div className="tg-wrap">
+                                    <div className="tg-wrap" key={index}>
                                         <input type="checkbox" {...register('providerNeed', { required: 'Please select an event type' })} value={item} id={'count'+index} />
                                         <label htmlFor={'count'+index}>{item}</label>
                                     </div>
