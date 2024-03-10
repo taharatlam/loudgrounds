@@ -11,6 +11,9 @@ import desk from '../assets/images/desk01.jpg'
 import nextNav from '../assets/images/next.svg'
 import prevNav from '../assets/images/prev.svg'
 import gal1 from '../assets/images/gal1.jpg'
+import gal2 from '../assets/images/gal2.jpg'
+import gal3 from '../assets/images/gal3.jpg'
+import gal4 from '../assets/images/gal4.jpg'
 
 
 const GallerySlider = () => {
@@ -33,7 +36,7 @@ const GallerySlider = () => {
                 <div className="col-12">
                     <div style={{'position':'relative'}}>
                         <h3 className="sec-head big text-center">
-                            loudgrounds <br className='d-sm-block d-none' />
+                            loudgrounds <br className='' />
                             made it
                         </h3>
                         <div className="swiper-nav gallery-nav pt-3 swiper-navigation">
@@ -59,18 +62,22 @@ const GallerySlider = () => {
         loop = {true}
         breakpoints={{
                 0: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 20,
                 },
                 640: {
-                slidesPerView: 2,
+                slidesPerView: 2.3,
                 spaceBetween: 20,
                 },
                 768: {
-                slidesPerView: 4,
+                slidesPerView: 2.5,
                 spaceBetween: 30,
                 },
                 1024: {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+                },
+                1200: {
                 slidesPerView: 3.5,
                 spaceBetween: 30,
                 },
@@ -84,7 +91,17 @@ const GallerySlider = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='gal-item'>
-                    <Image src={gal1} alt="" />
+                    <Image src={gal2} alt="" />
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='gal-item'>
+                    <Image src={gal3} alt="" />
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='gal-item'>
+                    <Image src={gal4} alt="" />
                 </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -94,30 +111,20 @@ const GallerySlider = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='gal-item'>
-                    <Image src={gal1} alt="" />
+                    <Image src={gal2} alt="" />
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='gal-item'>
-                    <Image src={gal1} alt="" />
+                    <Image src={gal3} alt="" />
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='gal-item'>
-                    <Image src={gal1} alt="" />
+                    <Image src={gal4} alt="" />
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
-                <div className='gal-item'>
-                    <Image src={gal1} alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className='gal-item'>
-                    <Image src={gal1} alt="" />
-                </div>
-            </SwiperSlide>
-
+      
         </Swiper>
         
         </div>

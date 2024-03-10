@@ -8,6 +8,10 @@ import Link from 'next/link';
 import { Pagination,Autoplay } from 'swiper/modules';
 
 import desk from '../assets/images/desk01.jpg'
+import v1 from '../assets/images/yoga.jpg'
+import v2 from '../assets/images/casual.jpg'
+import v4 from '../assets/images/adventure.jpg'
+import v3 from '../assets/images/birthday.jpg'
 import nextNav from '../assets/images/next.svg'
 import prevNav from '../assets/images/prev.svg'
 
@@ -47,10 +51,14 @@ const EventThemeSlider = () => {
             spaceBetween: 20,
             },
             768: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 30,
             },
             1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            },
+            1200: {
             slidesPerView: 4,
             spaceBetween: 30,
             },
@@ -59,7 +67,7 @@ const EventThemeSlider = () => {
       ref={sliderRef}>
         <SwiperSlide>
           <Link href="/" className='evnt-theme-card'>
-            <Image src={desk} alt="" />
+            <Image src={v1} alt="" />
             <div className="det">
                 <h3>Wellness Retreat</h3>
             </div>
@@ -67,7 +75,31 @@ const EventThemeSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Link href="/" className='evnt-theme-card'>
-            <Image src={desk} alt="" />
+            <Image src={v2} alt="" />
+            <div className="det">
+                <h3>Casual Get Togethers</h3>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link href="/" className='evnt-theme-card'>
+            <Image src={v3} alt="" />
+            <div className="det">
+                <h3>Birthday Parties</h3>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link href="/" className='evnt-theme-card'>
+            <Image src={v4} alt="" />
+            <div className="det">
+                <h3>Weekend Adventures</h3>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link href="/" className='evnt-theme-card'>
+            <Image src={v1} alt="" />
             <div className="det">
                 <h3>Wellness Retreat</h3>
             </div>
@@ -75,28 +107,29 @@ const EventThemeSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Link href="/" className='evnt-theme-card'>
-            <Image src={desk} alt="" />
+            <Image src={v2} alt="" />
             <div className="det">
-                <h3>Wellness Retreat</h3>
+                <h3>Casual Get Togethers</h3>
             </div>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link href="/" className='evnt-theme-card'>
-            <Image src={desk} alt="" />
+            <Image src={v3} alt="" />
             <div className="det">
-                <h3>Wellness Retreat</h3>
+                <h3>Birthday Parties</h3>
             </div>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link href="/" className='evnt-theme-card'>
-            <Image src={desk} alt="" />
+            <Image src={v4} alt="" />
             <div className="det">
-                <h3>Wellness Retreat</h3>
+                <h3>Weekend Adventures</h3>
             </div>
           </Link>
         </SwiperSlide>
+
      
         
       </Swiper>

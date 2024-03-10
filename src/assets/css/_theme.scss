@@ -50,6 +50,34 @@ a{
     border-radius: 20px;
     max-width: max-content;
 
+    &.prev{
+        background: #393939;
+
+        span{
+            color: white;
+        }
+
+        &:after{
+            display: none;
+        }
+
+        &:before{
+            filter: invert(100%) brightness(1000%);
+            content: '';
+            // position: absolute;
+            // top: 50%;
+            // right: 0;
+            transform: translateY(-10%) scaleX(-1);
+            width: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+           
+            height: 20px;
+            background: url(../images/arrow-right.svg) center/contain no-repeat;
+        }
+    }
+
     &.right{
         margin-left: auto;
         display: block;
@@ -136,6 +164,9 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
     line-height: 100%;
 
+    &.sm{
+        font-size: 42px;
+    }
     &.big{
         font-size: 72px;
     }

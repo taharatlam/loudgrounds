@@ -28,9 +28,31 @@ import EventsSlider from '@/components/EventsSlider';
 import SlateCard from '@/components/SlateCard';
 import TestimonialsSlider from '@/components/TestimonialsSlider';
 
+import FormModal from '@/components/FormModal';
+
+import { FormProvider } from '@/contexts/FormContext';
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+
+  const [showModal, setShowModal] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  
+
+  const handleFormSubmit = () => {
+    // You can perform any actions after the form is successfully submitted
+    setSubmitted(true);
+    closeModal();
+  };
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   const providers = [
     'Decorator',
@@ -92,9 +114,16 @@ export default function Home() {
 
   return (
       <main className='home-page'>
+        <FormProvider>
+          <FormModal show={showModal} onHide={closeModal} onSubmit={handleFormSubmit} />
+        </FormProvider>
+        
         <section className="hm-banner-sec">
-            <BannerSlider />
+            <BannerSlider  openModal={openModal} />
         </section>
+        {/* <button onClick={openModal}>
+          Open Modal
+        </button> */}
         <section className="sec light-sec banner-btm-sec">
           <Image src={pt} alt="" />
           <div className="container">
@@ -245,7 +274,7 @@ export default function Home() {
                   <h3 className="sec-head text-center">Featured Idea Slates</h3>
                 </div>
               </div>
-              <div className="row rogap-25 mt-5">
+              <div className="row row-gap-25 mt-5">
                 {
                   [...Array(3)].map((item, index)=>{
                     return(

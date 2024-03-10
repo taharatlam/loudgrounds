@@ -8,10 +8,10 @@ import Link from 'next/link';
 import { Pagination,Autoplay } from 'swiper/modules';
 
 import desk from '../assets/images/desk01.jpg'
-import mob from '../assets/images/mob01.jpg'
+import mob from '../assets/images/banner-mobile.jpg'
 
 
-const BannerSlider = () => {
+const BannerSlider = ({openModal, setShowModal}) => {
 
   const sliderRef = useRef(null);
   const handlePrev = useCallback(() => {
@@ -40,10 +40,16 @@ const BannerSlider = () => {
       ref={sliderRef}>
         <SwiperSlide>
           <div className="banner-slide">
-            <picture>
+            {/* <picture>
               <source srcSet={mob} media="(max-width:600px)" />
               <Image src={desk} alt="" />
-            </picture>
+            </picture> */}
+            <div className="d-sm-block d-none">
+              <Image src={desk} alt="" />
+            </div>
+            <div className="d-md-none">
+              <Image src={mob} alt="" />
+            </div>
             <div className="container">
               <div className="banner-con">
                 <h1>
@@ -54,9 +60,9 @@ const BannerSlider = () => {
                   Host an event like never before. Find the best venue, choose from trusted providers, and enjoy an experience remembered always
                 </p>
                 <div className='mt-3'>
-                  <Link href="" className="main-btn">
+                  <button className="main-btn" onClick={openModal}>
                     <span>Start planning</span>
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

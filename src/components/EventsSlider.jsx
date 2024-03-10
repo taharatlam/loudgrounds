@@ -42,14 +42,18 @@ const EventsSlider = () => {
             spaceBetween: 0,
             },
             640: {
-            slidesPerView: 2,
+            slidesPerView: 1.3,
             spaceBetween: 0,
             },
             768: {
-            slidesPerView: 3,
+            slidesPerView: 1.5,
             spaceBetween: 0,
             },
             1024: {
+            slidesPerView: 1.5,
+            spaceBetween: 0,
+            },
+            1200: {
             slidesPerView: 3,
             spaceBetween: 0,
             },

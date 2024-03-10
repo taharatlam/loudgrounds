@@ -2,7 +2,7 @@
 .main-nav{
     position: absolute;
     width: 100%;
-    z-index: 99999999;
+    z-index: 999;
     background: transparent;
     top: 0;
     left: 0;
@@ -45,6 +45,12 @@
                     font-weight: 500;
                     color: white;
                     font-size: 16px;
+                    text-transform: uppercase;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover{
+                        color: $yellow;
+                    }
                 }
             }
         }
@@ -73,7 +79,8 @@
     display: none;
 
     img{
-        width: 20px;
+        width: 30px;
+        height: auto;
     }
 }
 @keyframes slideIn {
@@ -89,13 +96,14 @@
     top: 0;
     left: 0;
     z-index: 9999999999;
-    background: linear-gradient(#1684DB, #1466A7);
-    width: 100%;
+    background: #252525;
+    width: 80%;
     height: 100vh;
     transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transform: translateX(-100%);
     opacity: 0;
     pointer-events: none;
+    border-radius: 0px 65px 45px 0px;
 
     &.active{
         opacity: 1;
@@ -105,8 +113,8 @@
 
     .close-btn{
         position: absolute;
-        top: 1em;
-        right: 1em;
+        top: 2em;
+        right: 2em;
         background: transparent;
         outline: none;
         border: none;
@@ -120,7 +128,7 @@
     ul{
         position: relative;
         padding-left: 0;
-        margin-top: 2em;
+        margin-top: 4em;
 
         li{
             
@@ -134,7 +142,7 @@
             a{
                 display: inline-block;
                 width: 100%;
-                padding: 1em 1.5em;
+                padding: 1.5em 1.5em;
                 color: white;
             }
         }

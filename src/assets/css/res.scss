@@ -1,0 +1,206 @@
+@media(max-width: 1440px){
+
+}
+@media(max-width: 1366px){
+
+}
+@media(max-width: 991px){
+    .ev-img-container .ev-img{
+        margin-top: 1.5em;
+    }
+    .cc-tabs button{
+        font-size: 16px;
+    }
+    .main-btn.right{
+        margin: 0 auto;
+    }
+    .ft-logo{
+        display: block;
+        margin: 0 auto;
+        max-width: max-content;
+        width: 130px;
+        margin-bottom: 2em;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .ft-btm .l-part{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+
+        p{
+            border: none;
+            padding: 0;
+        }
+    }
+    .para.text-right{
+        text-align: center;
+    }
+}
+@media(max-width: 767px){
+
+}
+@media(max-width: 500px){
+    .sum-grid{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .cc-modal .modal-dialog{
+        margin: 0;
+
+        .modal-content{
+            border-radius: 0px !important;
+
+            .modal-body{
+                min-height: 100vh;
+            }
+        }
+    }
+    .st-modal-contain{
+        padding: 1.5em 0em;
+        padding-top: 3em;
+        // height: 100vh;
+    }
+    .pro-bar{
+        width: 55%;
+    }
+    .sec-head.sm{
+        font-size: 32px;
+    }
+    .sec-head.big{
+        font-size: 32px;
+    }
+    .main-nav .nav-inner .head-logo{
+        width: 90px;
+    }
+    .main-nav .nav-inner .nav-list{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .venue-card .venue-det{
+        text-align: center;
+    }
+    .event-card{
+        padding: 0px 1.5em;
+    }
+    .test-card{
+        padding: 5em 1.5em;
+        padding-bottom: 3em;
+        border-radius: 55px 80px 45px 60px;
+    }
+    .main-btn span{
+        font-size: 14px;
+    }
+    .main-btn{
+
+        &:after{
+            width: 17px;
+            height: 17px;
+        }
+    }
+    .banner-slide{
+        min-height: 550px;
+
+        .banner-con{
+            min-height: 550px;
+            padding-bottom: 20px;
+
+            .para{
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .cta-sec{
+        padding-bottom: 2em;
+        margin-top: 0em;
+        
+    }
+    .banner-slide .banner-con h1{
+        font-size: 32px;
+        line-height: 100%;
+    }
+    .provider-container{
+        row-gap: 15px;
+        gap: 15px;
+    }
+    .full-curve-sec{
+        padding-top: 2.5em;
+    }
+    .provider-container .provider-tag span{
+        font-size: 14px;
+    }
+    .sec{
+        padding: 3em 0px;
+    }
+    .test-sec{
+        padding-bottom: 5em;
+    }
+    .main-footer{
+        padding-top: 3em;
+
+        .ft-logo{
+            margin-bottom: 3em;
+        }
+    }
+    .ft-btm{
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 2em;
+        padding: 2em 0px;
+
+        .l-part{
+            align-items: center;
+        }
+
+        .soc-list{
+            padding-left: 0;
+        }
+    }
+    .cta-wrap{
+        flex-direction: column;
+        gap: 20px;
+        h3{
+            text-align: center;
+        }
+        img{
+            width: 45px !important;
+            height: auto;
+        }
+    }
+    .main-nav{
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    }
+    .sec-head{
+        font-size: 32px;
+    }
+    .test-card p{
+        font-size: 18px;
+    }
+    .test-card .det span{
+        font-size: 18px;
+    }
+    .test-card .det > img{
+        width: 45px;
+        height: 45px;
+    }
+    .cc-tabs{
+        flex-wrap: nowrap !important;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+        gap: 20px;
+
+        button{
+            min-width: max-content;
+        }
+    }
+}
+@media(max-width: 350px){
+}
