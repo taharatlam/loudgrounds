@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -29,6 +30,24 @@ const Navbar = () => {
 
   return (
     <>
+    <Head>
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-QQYXKV5LVS`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-QQYXKV5LVS');
+                `,
+          }}
+        />
+
+    </Head>
         <nav className={`main-nav ${isSticky ? 'sticky-menu' : ''}`}>
             <div className="container">
                 <div className="nav-inner">

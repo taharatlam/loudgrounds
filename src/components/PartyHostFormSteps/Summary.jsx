@@ -16,7 +16,7 @@ import Link from 'next/link'
 
 const Summary = () => {
 
-    const { onHandleNext,onHandleBack, setFormData, formData } = useFormState();
+    const { onHandleNext,onHandleBack, setStep, setFormData, formData } = useFormState();
 
     const [thankyou, setTankhyou] = useState(false)
 
@@ -32,6 +32,7 @@ const Summary = () => {
         setFormData((prev) => ({ ...prev, ...data }));
         // onHandleNext();
         setTankhyou(true)
+        setStep(1);
     };
         return (
             <>
