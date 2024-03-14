@@ -3,6 +3,8 @@ import '../assets/css/main.scss';
 import '../assets/css/res.scss';
 import { Inter, Montserrat } from 'next/font/google'
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 import Navbar from '@/components/Navbar';
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -22,12 +24,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
+       
       </Head>
       <body className={montserrat.className}>
         <Navbar />
           {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-QQYXKV5LVS" />
     </html>
   )
 }

@@ -9,7 +9,12 @@ import logo from '../assets/images/logo.svg';
 import menuBtn from '../assets/images/menu.svg';
 import cross from '../assets/images/cross.svg';
 
+import Script from 'next/script'
+
+// import { gtag } from '@google/gtag';
+
 const Navbar = () => {
+    const measurementId = 'G-YOUR_MEASUREMENT_ID';
     const [menuOpen, setMenuClose] = useState(false);
     const [isSticky, setSticky] = useState(false);
 
@@ -28,26 +33,18 @@ const Navbar = () => {
         };
     }, []);
 
+    // useEffect(() => {
+    //     gtag('js', new Date());
+    
+    //     gtag('config', measurementId, {
+    //       page_path: window.location.pathname,
+    //     });
+    //   }, []);
+
   return (
     <>
-    <Head>
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-QQYXKV5LVS`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-QQYXKV5LVS');
-                `,
-          }}
-        />
-
-    </Head>
+    {/* QQYXKV5LVS */}
+    
         <nav className={`main-nav ${isSticky ? 'sticky-menu' : ''}`}>
             <div className="container">
                 <div className="nav-inner">

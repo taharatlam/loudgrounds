@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+
+
 import BannerSlider from '@/components/BannerSlider'
 
 import Tab from 'react-bootstrap/Tab';
@@ -31,6 +33,7 @@ import TestimonialsSlider from '@/components/TestimonialsSlider';
 import FormModal from '@/components/FormModal';
 
 import { FormProvider } from '@/contexts/FormContext';
+import Head from 'next/head';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -113,6 +116,25 @@ export default function Home() {
   
 
   return (
+    <>
+      <Head>
+         {/* Google tag (gtag.js) */}
+         {/* <script src="hello-src" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-QQYXKV5LVS`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-QQYXKV5LVS');
+                `,
+          }}
+        /> */}
+      </Head>
       <main className='home-page'>
         <FormProvider>
           <FormModal show={showModal} onHide={closeModal} onSubmit={handleFormSubmit} />
@@ -330,6 +352,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+    </>
     
   )
 }
