@@ -11,6 +11,8 @@ import cross from '../assets/images/cross.svg';
 
 import Script from 'next/script'
 
+import { clarity } from 'react-microsoft-clarity';
+
 // import { gtag } from '@google/gtag';
 
 const Navbar = () => {
@@ -19,6 +21,7 @@ const Navbar = () => {
     const [isSticky, setSticky] = useState(false);
 
     useEffect(() => {
+        clarity.init('lgms8qqmra');
         const handleScroll = () => {
           const scrollPosition = window.scrollY;
           if (scrollPosition > 300) {
