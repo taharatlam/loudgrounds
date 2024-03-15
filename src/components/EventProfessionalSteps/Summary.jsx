@@ -12,11 +12,13 @@ import insta from '../../assets/images/ins.svg'
 import what from '../../assets/images/wha.svg'
 import mail from '../../assets/images/mai.svg'
 
+import api from '@/helper/api';
+
 import Link from 'next/link'
 
 const Summary = () => {
-
-    const { onHandleNext,onHandleBack, setFormData, formData } = useFormState();
+    const [loading,setloading] = useState(false)
+    const { onHandleNext,onHandleBack, setFormData, formData, setStep } = useFormState();
 
     const [thankyou, setTankhyou] = useState(false)
 
@@ -31,7 +33,18 @@ const Summary = () => {
     const onHandleFormSubmit = (data) => {
         setFormData((prev) => ({ ...prev, ...data }));
         // onHandleNext();
-        setTankhyou(true)
+        setloading(true);
+        console.log('data', formData);
+        api.post('/host', formData)
+        .then(response => {
+            setTankhyou(true);
+            setStep(1)
+            setFormData({})
+            console.log('res', formData);
+        })
+        .catch(error => {
+            console.log('error', error);
+        });
     };
         return (
             <>
@@ -80,7 +93,11 @@ const Summary = () => {
                                             <button type="button" className="main-btn prev" onClick={onHandleBack}>
                                                 <span>Previous</span>
                                             </button>
-                                            <button className="main-btn">
+                                            <button className={`main-btn ${loading?'loading':''}`} disabled={loading}>
+                                                {
+                                                    loading?
+                                                    <span className='loader'></span>:''
+                                                }
                                                 <span>Submit</span>
                                             </button>
                                         </div>
@@ -123,7 +140,7 @@ const Summary = () => {
                              </div>
                          </div>
                      </div>
-                 </>
+                    </>
                 }
             </>
         )

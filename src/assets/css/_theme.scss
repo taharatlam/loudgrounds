@@ -49,6 +49,8 @@ a{
     border: none;
     border-radius: 20px;
     max-width: max-content;
+    transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);   
+    
 
     &.prev{
         background: #393939;
@@ -106,6 +108,64 @@ a{
         margin-left: 15px;
         height: 20px;
         background: url(../images/arrow-right.svg) center/contain no-repeat;
+    }
+
+    &.loading{
+        max-width: 75px;
+        border-radius: 50%;
+
+        >*:not(.loader){
+            opacity: 0;
+            pointer-events: none;
+
+        }
+        &:after{
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        >span.loader{
+            display: flex;
+            animation: rotation 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            &::after,
+            &::before {
+            content: '';  
+                box-sizing: border-box;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 50%;
+                left: 50%;
+                transform: scale(0.5) translate(0, 0);
+                background-color: #ccc;
+                border-radius: 50%;
+                animation: animloader 1s infinite ease-in-out;
+            }
+            &::before {
+                background-color: #000;
+                transform: scale(0.5) translate(-48px, -48px);
+            }
+    
+            @keyframes rotation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            } 
+            @keyframes animloader {
+                50% {
+                    transform: scale(1) translate(-50%, -50%);
+                }
+            }
+        }
+
     }
 
     &.center{
