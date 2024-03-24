@@ -37,7 +37,7 @@ const GallerySlider = () => {
                     <div style={{'position':'relative'}}>
                         <h3 className="sec-head big text-center">
                             loudgrounds <br className='' />
-                            made it
+                            DID it
                         </h3>
                         <div className="swiper-nav gallery-nav pt-3 swiper-navigation">
                             <button className="prev-arrow" onClick={handlePrev}><Image src={prevNav} alt="" /></button>
@@ -132,10 +132,10 @@ const GallerySlider = () => {
             <div className="row justify-content-end mt-5">
                 <div className="col-lg-5 col-12">
                     <p className="para text-right">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
+                    We&apos;re more than just an event planning service - we&apos;re your partner, ally, confidant and buddy in creating unforgettable moments. 
                     </p>
                     <a href="" className="main-btn right no-arrow white-btn">
-                        <span>Discover the Possibilities</span>
+                        <span>DISCOVER THE POSSIBILITIES</span>
                     </a>
                 </div>
             </div>

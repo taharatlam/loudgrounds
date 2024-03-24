@@ -32,8 +32,7 @@ const FifthStep = () => {
                 <div className="row">
                     <div className="col-12 text-center">
                         <h3 className="sec-head sm text-center">
-                        Share us your details and we can
-take this further    
+                        Share us your details and we can take this further.
                         </h3>
                      
                     </div>
@@ -54,10 +53,10 @@ take this further
                         <div className="form-group">
                             <label htmlFor="" className="label-text">Designation</label>
                             <div className="inp-grp">
-                                <input type="text" {...register('name', { required: 'Please select an event type' })} placeholder='Designation In Company' />
+                                <input type="text" {...register('designation', { required: 'Please select an event type' })} placeholder='Designation In Company' />
                             </div>
-                            {errors.name && (
-                                <div className="error-message">{errors.name.message}</div>
+                            {errors.designation && (
+                                <div className="error-message">{errors.designation.message}</div>
                             )}
                         </div>
                     </div>
@@ -66,10 +65,10 @@ take this further
                         <div className="form-group">
                             <label htmlFor="" className="label-text">Email Address</label>
                             <div className="inp-grp">
-                                <input type="text" {...register('email', { required: 'Please select an event type' })} placeholder='Enter your email address' />
+                                <input type="text" {...register('email_id', { required: 'Please select an event type' })} placeholder='Enter your email address' />
                             </div>
-                            {errors.email && (
-                                <div className="error-message">{errors.email.message}</div>
+                            {errors.email_id && (
+                                <div className="error-message">{errors.email_id.message}</div>
                             )}
                         </div>
                     </div>
@@ -77,10 +76,10 @@ take this further
                         <div className="form-group">
                             <label htmlFor="" className="label-text">Phone Number</label>
                             <div className="inp-grp">
-                                <input type="text" {...register('mobile', { required: 'Please select an event type' })} placeholder='Enter your phone number' />
+                                <input type="text" {...register('phone_number', { required: 'Please select an event type' })} placeholder='Enter your phone number' />
                             </div>
-                            {errors.mobile && (
-                                <div className="error-message">{errors.mobile.message}</div>
+                            {errors.phone_number && (
+                                <div className="error-message">{errors.phone_number.message}</div>
                             )}
                         </div>
                     </div>

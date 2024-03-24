@@ -46,7 +46,7 @@ const FourthStep = () => {
                 <div className="row">
                     <div className="col-12">
                         <h3 className="sec-head sm text-center">
-                        What all support do you need for the event?           
+                        What event services do you provide?         
                         </h3>
                     </div>
                 </div>

@@ -40,7 +40,7 @@ const StepFormikForm = ({ onSubmit }) => {
             <div className="step-inner">
                 <div className="row">
                     <div className="col-12">
-                        <h4 className="sub-head text-center">Great to have you at <span>LoudGrounds</span>. Let’s get started!!</h4>
+                        <h4 className="sub-head text-center">Great to have you at <span>LoudGrounds</span>. Let&apos;s get started! How can we help you? </h4>
                         <h3 className="sec-head sm text-center">
                         How can we help you?
                         </h3>
@@ -55,7 +55,7 @@ const StepFormikForm = ({ onSubmit }) => {
                                 <div className="ic">
                                     <Image src={party} alt="" />
                                 </div>
-                                <span>Party Host</span>
+                                <span>Host an Event </span>
                                 <p>
                                 hosting an upcoming event or looking for new event ideas
                                 </p>
@@ -71,8 +71,8 @@ const StepFormikForm = ({ onSubmit }) => {
                                 <div className="ic">
                                     <Image src={eventProfessional} alt="" />
                                 </div>
-                                <span>Event Professional</span>
-                                <p>I help in organizing events - Venue Provider or Freelancer / Agency that provides services for events.</p>
+                                <span>Get Listed </span>
+                                <p> I help in organizing events - Venue Provider or Freelancer / Agency that provides services for events.</p>
                             </label>
                         </div>
                         

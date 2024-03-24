@@ -53,11 +53,12 @@ const BannerSlider = ({openModal, setShowModal}) => {
             <div className="container">
               <div className="banner-con">
                 <h1>
-                  Make your <br  className='d-sm-block d-none' />
-                  Occasion Memorable
+                ONE-STOP<br className='d-sm-block d-none' /> EVENT MANAGEMENT 
+                  {/* Make your <br  className='d-sm-block d-none' />
+                  Occasion Memorable */}
                 </h1>
                 <p className="para">
-                  Host an event like never before. Find the best venue, choose from trusted providers, and enjoy an experience remembered always
+                Effortlessly browse and find the best venues and services in your city! Let us help you create memorable moments with just a few clicks. 
                 </p>
                 <div className='mt-3'>
                   <button className="main-btn" onClick={openModal}>

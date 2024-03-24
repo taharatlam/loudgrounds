@@ -32,19 +32,19 @@ const FirstStep = ({handleChange}) => {
                 <div className="row">
                     <div className="col-12">
                         <h3 className="sec-head sm text-center">
-                        What type of event are you looking to host?
+                        What type of services do you provide?
                         </h3>
                     </div>
                 </div>
                 <div className="row mt-4 row-gap-20">
                     <div className="col-12">
-                    {errors.eventType && (
-                        <div className="error-message">{errors.eventType.message}</div>
+                    {errors.organizer_type && (
+                        <div className="error-message">{errors.organizer_type.message}</div>
                     )}
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Venue" {...register('eventType', { required: 'Please select an event type' })}   id="e1" />
+                            <input type="radio" value="Venue" {...register('organizer_type', { required: 'Please select an event type' })}   id="e1" />
                             <label htmlFor="e1">
                                 <div className="ic">
                                     <Image src={e1} alt="" />
@@ -55,7 +55,7 @@ const FirstStep = ({handleChange}) => {
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Planner" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="e2" />
+                            <input type="radio" value="Planner" name="party type" {...register('organizer_type', { required: 'Please select an event type' })}  id="e2" />
                             <label htmlFor="e2">
                                 <div className="ic">
                                     <Image src={e2} alt="" />
@@ -66,7 +66,7 @@ const FirstStep = ({handleChange}) => {
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Photographer / Videographer" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="e3" />
+                            <input type="radio" value="Photographer / Videographer" name="party type" {...register('organizer_type', { required: 'Please select an event type' })}  id="e3" />
                             <label htmlFor="e3">
                                 <div className="ic">
                                     <Image src={e3} alt="" />
@@ -77,7 +77,7 @@ const FirstStep = ({handleChange}) => {
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Artist / Band / DJ" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="e4" />
+                            <input type="radio" value="Artist / Band / DJ" name="party type" {...register('organizer_type', { required: 'Please select an event type' })}  id="e4" />
                             <label htmlFor="e4">
                                 <div className="ic">
                                     <Image src={e4} alt="" />
@@ -88,7 +88,7 @@ const FirstStep = ({handleChange}) => {
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Chef / Caterer" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="e5" />
+                            <input type="radio" value="Chef / Caterer" name="party type" {...register('organizer_type', { required: 'Please select an event type' })}  id="e5" />
                             <label htmlFor="e5">
                                 <div className="ic">
                                     <Image src={e5} alt="" />
@@ -99,7 +99,7 @@ const FirstStep = ({handleChange}) => {
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Others" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="e6" />
+                            <input type="radio" value="Others" name="party type" {...register('organizer_type', { required: 'Please select an event type' })}  id="e6" />
                             <label htmlFor="e6">
                                 <div className="ic">
                                     <Image src={e6} alt="" />

@@ -152,13 +152,14 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-5 col-12">
                 <h3 className="sec-head">
-                  Build your dream <br className='d-sm-block d-none' />
-                  event with ease
+                PUT TOGETHER YOUR DREAM EVENT WITH EASE
+                  {/* Build your dream <br className='d-sm-block d-none' />
+                  event with ease */}
                 </h3>
               </div>
               <div className="col-lg-5 offset-lg-2 col-12">
                 <p className="para">
-                Host an event like never before. Find the best venue, choose from trusted providers, and enjoy an experience remembered always
+                Host an event like never before, find the best venues, choose from trusted service providers, and enjoy an experience that you’ll never forget. 
                 </p>
                 <a href="" className="main-btn link-only">
                   <span>Browse all themes</span>
@@ -180,9 +181,7 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-lg-6 col-12">
                 <h3 className="sec-head">
-                  spice up <br className='d-sm-block d-none' />
-                  your event <br className='d-sm-block d-none' />
-                  with providers
+                  ELEVATE YOUR <br className='d-sm-block d-none' /> EVENT EXPERIENCE
                 </h3>
                 <div className="provider-container mb-5 mt-5">
                   {
@@ -225,8 +224,9 @@ export default function Home() {
             <div className="row text-center">
               <div className="col-12">
                 <h3 className="sec-head">
-                  choose your dream <br className='d-sm-block d-none' />
-                  location
+                CHOOSE <br className='d-sm-block d-none' />THE BACKDROP 
+                  {/* choose your dream <br className='d-sm-block d-none' />
+                  location */}
                 </h3>
               </div>
             </div>
@@ -240,19 +240,19 @@ export default function Home() {
                   <Tab eventKey="profile" title="Hotels">
                     <VenueSlider />
                   </Tab>
-                  <Tab eventKey="tab2" title="FarmStays">
+                  <Tab eventKey="tab2" title="RESTAURANTS ">
                     Tab content for Profile
                   </Tab>
-                  <Tab eventKey="tab3" title="Restaurant">
+                  <Tab eventKey="tab3" title="FARMHOUSE">
                     Tab content for Contact
                   </Tab>
-                  <Tab eventKey="tab4" title="Park">
+                  <Tab eventKey="tab4" title="RESORTS">
                     Tab content for Contact
                   </Tab>
-                  <Tab eventKey="tab5" title="Dessert">
+                  <Tab eventKey="tab5" title="OUTDOORS ">
                     Tab content for Contact
                   </Tab>
-                  <Tab eventKey="tab6" title="Resorts">
+                  <Tab eventKey="tab6" title="STUDIOS & GALLERIES">
                     Tab content for Contact
                   </Tab>
                 </Tabs>
@@ -279,10 +279,10 @@ export default function Home() {
               <div className="row justify-content-end mt-5">
                   <div className="col-lg-5 col-12">
                       <p className="para text-right">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
+                      Hosting an event? Sign up to become a part of the Loudgrounds community to get your experience featured right away! Whether it&apos;s an intimate gathering, a thrilling retreat, or a lively music festival, we want you to feel seen. 
                       </p>
-                      <a href="" className="main-btn right no-arrow white-btn">
-                          <span>Discover the Possibilities</span>
+                      <a href="javascript:void(0)" className="main-btn right no-arrow white-btn">
+                          <span>DISCOVER THE OPPORTUNITIES</span>
                       </a>
                   </div>
               </div>
@@ -293,7 +293,7 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 <div className="col-12">
-                  <h3 className="sec-head text-center">Featured Idea Slates</h3>
+                  <h3 className="sec-head text-center">TALK TO MARYAM ABOUT IDEA SLATES WITH TIKTOK ACCOUNT </h3>
                 </div>
               </div>
               <div className="row row-gap-25 mt-5">
@@ -312,7 +312,7 @@ export default function Home() {
                 <div className="row justify-content-end mt-5">
                     <div className="col-lg-5 col-12">
                         <a href="" className="main-btn right no-arrow white-btn">
-                            <span>All Featured Idea Slate</span>
+                            <span>CAN START WITH PINTEREST </span>
                         </a>
                     </div>
                 </div>
@@ -325,8 +325,9 @@ export default function Home() {
             <div className="row">
               <div className="col-12">
                 <h3 className="sec-head text-center">
-                What clients <br className='d-sm-block d-none' />
-                are saying
+                WHAT EVERYONE’S SAYING<br className='d-sm-block d-none' /> ABOUT US 
+                {/* What clients <br className='d-sm-block d-none' />
+                are saying */}
                 </h3>
               </div>
             </div>
@@ -342,8 +343,9 @@ export default function Home() {
               <div className="col-lg-11 col-12">
                 <Link href="" className="cta-wrap">
                   <h3 className="sec-head">
-                  get your <br className='d-sm-block d-none' />
-                  event ready by us
+                  CURATE YOUR EPIC<br className='d-sm-block d-none' /> MOMENTS WITH LOUDGROUNDS 
+                  {/* get your <br className='d-sm-block d-none' />
+                  event ready by us */}
                   </h3>
                   <Image src={diagArrow} alt="" />
                 </Link>

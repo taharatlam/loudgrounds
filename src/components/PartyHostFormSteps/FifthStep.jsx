@@ -32,10 +32,10 @@ const FifthStep = () => {
                 <div className="row">
                     <div className="col-12 text-center">
                         <h3 className="sec-head sm text-center">
-                        We are all set to get<br className='d-sm-block d-none' /> you started       
+                        Personal Details      
                         </h3>
                         <p className="para">
-                        just need details on where to communicate with you next
+                        We are all set to get your started, just need details on where to communicate with you next
                         </p>
                     </div>
                 </div>
@@ -53,12 +53,12 @@ const FifthStep = () => {
                     </div>
                     <div className="col-lg-6 col-12">
                         <div className="form-group">
-                            <label htmlFor="" className="label-text">Mobile</label>
+                            <label htmlFor="" className="label-text">Phone Number (Whatsapp)</label>
                             <div className="inp-grp">
-                                <input type="text" {...register('mobile', { required: 'Please select an event type' })} placeholder='Enter your mobile number' />
+                                <input type="text" {...register('phone_number', { required: 'Please select an event type' })} placeholder='Enter your phone number' />
                             </div>
-                            {errors.mobile && (
-                                <div className="error-message">{errors.mobile.message}</div>
+                            {errors.phone_number && (
+                                <div className="error-message">{errors.phone_number.message}</div>
                             )}
                         </div>
                     </div>
@@ -66,10 +66,10 @@ const FifthStep = () => {
                         <div className="form-group">
                             <label htmlFor="" className="label-text">Email Address</label>
                             <div className="inp-grp">
-                                <input type="text" {...register('email', { required: 'Please select an event type' })} placeholder='Enter your email address' />
+                                <input type="text" {...register('email_id', { required: 'Please select an event type' })} placeholder='Enter your email address' />
                             </div>
-                            {errors.email && (
-                                <div className="error-message">{errors.email.message}</div>
+                            {errors.email_id && (
+                                <div className="error-message">{errors.email_id.message}</div>
                             )}
                         </div>
                     </div>

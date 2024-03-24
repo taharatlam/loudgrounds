@@ -69,7 +69,7 @@ const EventThemeSlider = () => {
           <Link href="/" className='evnt-theme-card'>
             <Image src={v1} alt="" />
             <div className="det">
-                <h3>Wellness Retreat</h3>
+                <h3>Intimate Gatherings </h3>
             </div>
           </Link>
         </SwiperSlide>
@@ -77,7 +77,7 @@ const EventThemeSlider = () => {
           <Link href="/" className='evnt-theme-card'>
             <Image src={v2} alt="" />
             <div className="det">
-                <h3>Casual Get Togethers</h3>
+                <h3>Special Occasions</h3>
             </div>
           </Link>
         </SwiperSlide>
@@ -85,15 +85,7 @@ const EventThemeSlider = () => {
           <Link href="/" className='evnt-theme-card'>
             <Image src={v3} alt="" />
             <div className="det">
-                <h3>Birthday Parties</h3>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link href="/" className='evnt-theme-card'>
-            <Image src={v4} alt="" />
-            <div className="det">
-                <h3>Weekend Adventures</h3>
+                <h3>Live Festivals </h3>
             </div>
           </Link>
         </SwiperSlide>
@@ -101,23 +93,7 @@ const EventThemeSlider = () => {
           <Link href="/" className='evnt-theme-card'>
             <Image src={v1} alt="" />
             <div className="det">
-                <h3>Wellness Retreat</h3>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link href="/" className='evnt-theme-card'>
-            <Image src={v2} alt="" />
-            <div className="det">
-                <h3>Casual Get Togethers</h3>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link href="/" className='evnt-theme-card'>
-            <Image src={v3} alt="" />
-            <div className="det">
-                <h3>Birthday Parties</h3>
+                <h3>Wellness Retreats</h3>
             </div>
           </Link>
         </SwiperSlide>
@@ -125,11 +101,26 @@ const EventThemeSlider = () => {
           <Link href="/" className='evnt-theme-card'>
             <Image src={v4} alt="" />
             <div className="det">
-                <h3>Weekend Adventures</h3>
+                <h3>Weekend Excursions </h3>
             </div>
           </Link>
         </SwiperSlide>
-
+        <SwiperSlide>
+          <Link href="/" className='evnt-theme-card'>
+            <Image src={v1} alt="" />
+            <div className="det">
+                <h3>Secret Suppers</h3>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link href="/" className='evnt-theme-card'>
+            <Image src={v2} alt="" />
+            <div className="det">
+                <h3>Listening Parties</h3>
+            </div>
+          </Link>
+        </SwiperSlide>
      
         
       </Swiper>

@@ -32,36 +32,41 @@ const ThirdStep = () => {
                 <div className="row">
                     <div className="col-12">
                         <h3 className="sec-head sm text-center">
-                            What’s your guest size and budget for the event?            
+                        What&apos;s your guest size and budget for the event?          
                         </h3>
                     </div>
                 </div>
                 <div className="row mt-4 justify-content-center">
                     <div className="col-lg-8 col-12">
                         <div className="form-group">
-                            <label htmlFor="" className="label-text">Estimated Total Guest Count?</label>
+                            <label htmlFor="" className="label-text">Estimated attendees?</label>
                             <div className="inp-grp">
-                                <select {...register('guestCount', { required: 'Please select an event type' })} id="" >
+                                <select {...register('guest_count', { required: 'Please select an event type' })} id="" >
                                     <option value="">Select</option>
-                                    <option value="50 - 100">50 - 100</option>
-                                    <option value="100 - 200">100 - 200</option>
+                                    <option value="<25 ">{'<25'}</option>
+                                    <option value="25-100">25-100</option>
+                                    <option value="100-500 ">100-500 </option>
+                                    <option value="500+">500+</option>
                                 </select>
                             </div>
-                            {errors.guestCount && (
-                                <div className="error-message">{errors.guestCount.message}</div>
+                            {errors.guest_count && (
+                                <div className="error-message">{errors.guest_count.message}</div>
                             )}
                         </div>
                         <div className="form-group">
-                            <label htmlFor="" className="label-text">Estimated Total Budget for the event?</label>
+                            <label htmlFor="" className="label-text">Estimated budget?</label>
                             <div className="inp-grp">
-                                <select {...register('eventbudget', { required: 'Please select an event type' })} id="" >
+                                <select {...register('total_budget', { required: 'Please select an event type' })} id="" >
                                     <option value="">Select</option>
-                                    <option value="50K - 100K USD">50K - 100K USD</option>
-                                    <option value="100K - 200K USD">100K - 200K USD</option>
+                                    <option value="Under AED 5K">Under AED 5K</option>
+                                    <option value="AED 5K - AED 20K">AED 5K - AED 20K</option>
+                                    <option value="AED 20K - AED 50K">AED 20K - AED 50K</option>
+                                    <option value="AED 50K - AED 100K">AED 50K - AED 100K</option>
+                                    <option value="AED 100K+">AED 100K+</option>
                                 </select>
                             </div>
-                            {errors.eventbudget && (
-                                <div className="error-message">{errors.eventbudget.message}</div>
+                            {errors.total_budget && (
+                                <div className="error-message">{errors.total_budget.message}</div>
                             )}
                         </div>
                      

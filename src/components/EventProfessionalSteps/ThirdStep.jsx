@@ -41,30 +41,30 @@ const ThirdStep = () => {
                         <div className="form-group">
                             <label htmlFor="" className="label-text">Can you share a detail of the services you offer?</label>
                             <div className="inp-grp">
-                                <textarea {...register('details')} id="" cols="30" placeholder='Enter Details' rows="4"></textarea>
+                                <textarea {...register('service_details')} id="" cols="30" placeholder='Enter details' rows="4"></textarea>
                             </div>
-                            {errors.guestCount && (
-                                <div className="error-message">{errors.guestCount.message}</div>
+                            {errors.service_details && (
+                                <div className="error-message">{errors.service_details.message}</div>
                             )}
                         </div>
                         <div className="form-group">
                             <label htmlFor="" className="label-text">Do you have any standard packages?</label>
                             <div className="d-flex gap-2">
                                 <div className="cap-check">
-                                    <input type="radio" {...register('anyStandardPackage', { required: 'Please select an event type' })} name="anyStandardPackage" value="yes" id="yes" />
+                                    <input type="radio" {...register('standard_packages', { required: 'Please select an event type' })} name="standard_packages" value="yes" id="yes" />
                                     <label htmlFor="yes">
                                         <span>YES</span>
                                     </label>
                                 </div>
                                 <div className="cap-check">
-                                    <input type="radio" {...register('anyStandardPackage', { required: 'Please select an event type' })} name='anyStandardPackage' value="no" id="no" />
+                                    <input type="radio" {...register('standard_packages', { required: 'Please select an event type' })} name='standard_packages' value="no" id="no" />
                                     <label htmlFor="no">
                                         <span>NO</span>
                                     </label>
                                 </div>
                             </div>
-                            {errors.anyStandardPackage && (
-                                <div className="error-message">{errors.anyStandardPackage.message}</div>
+                            {errors.standard_packages && (
+                                <div className="error-message">{errors.standard_packages.message}</div>
                             )}
                         </div>
                         

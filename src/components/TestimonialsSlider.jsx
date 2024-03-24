@@ -25,6 +25,29 @@ const TestimonialsSlider = () => {
     sliderRef.current.swiper.slideNext();
   }, []);
 
+  const testData = [
+    {
+      name:'Christina ',
+      feedback:'The decoration was amazing; Santa and the Elves drove us crazy. There were a lot of beautiful and delicious cocktails and food. There was very good music. Dancing; games and unforgettable laughter',
+      eventType:'Music Concert'
+    },
+    {
+      name:'Mohamed ',
+      feedback:'The most enjoyful party ',
+      eventType:'Music Concert'
+    },
+    {
+      name:'Ronnie ',
+      feedback:'I experienced freedom ; fun moments with my loved ones and space to express myself ',
+      eventType:'Music Concert'
+    },
+    {
+      name:'Omar alnuaim ',
+      feedback:'It was amazing !',
+      eventType:'Music Concert'
+    },
+  ]
+
   return (
     <div className='test-slider-container'>
         <Swiper
@@ -62,14 +85,15 @@ const TestimonialsSlider = () => {
         className="test-slider"
         ref={sliderRef}>
             {
-                [...Array(5)].map(function(item,index){
+                testData.map(function(item,index){
                     return(
                         <SwiperSlide key={index}>
-                            <TestimonialCard />
+                            <TestimonialCard data={item} />
                         </SwiperSlide>
                     )
                 })
             }
+            
         </Swiper>
         <div className="swiper-nav pt-3 swiper-navigation">
             <button className="prev-arrow" onClick={handlePrev}><Image src={prevNav} alt="" /></button>

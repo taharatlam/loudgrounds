@@ -13,17 +13,17 @@ import s3 from '../assets/images/s3.jpg'
 import dot from '../assets/images/dot.svg'
 
 
-const TestimonialCard = () => {
+const TestimonialCard = ({data}) => {
 
   return (
     <div className='test-card'>
         <Image src={quote} alt="" />
         <div className="test-det">
-            <p>I experienced freedom ; fun moments with my loved ones and  space to express myself</p>
+            <p>{data.feedback}</p>
             
             <div className="det">
                 <Image src={prof} alt="" />
-                <span>Mohamed </span>
+                <span>{data.name} </span>
             </div>
         </div>
     </div>

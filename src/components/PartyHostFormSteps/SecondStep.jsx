@@ -32,8 +32,7 @@ const SecondStep = () => {
                 <div className="row">
                     <div className="col-12">
                         <h3 className="sec-head sm text-center">
-                            When are you planning
-                            the Event?                  
+                        When are you planning the Event?                
                         </h3>
                     </div>
                 </div>
@@ -44,7 +43,7 @@ const SecondStep = () => {
                             <Controller
                                 control={control}
                                 name='date-input'
-                                {...register('preferredDate', { required: 'Please select an event type' })}
+                                {...register('preferred_date', { required: 'Please select an event type' })}
                                 render={({ field }) => (
                                 <DatePicker
                                     placeholderText='Select date'
@@ -53,37 +52,37 @@ const SecondStep = () => {
                                 />
                             )}
                             />
-                            {errors.preferredDate && (
-                                <div className="error-message">{errors.preferredDate.message}</div>
+                            {errors.preferred_date && (
+                                <div className="error-message">{errors.preferred_date.message}</div>
                             )}
                         </div>
                         <div className="form-group">
-                            <label htmlFor="" className="label-text">Venue for the Event</label>
+                            <label htmlFor="" className="label-text">Vanue for the Event</label>
                             <div className="inp-grp">
-                                <input type="text" {...register('venue', { required: 'Please select an event type' })} placeholder='Enter Location /  Venue Name' />
+                                <input type="text" {...register('preferred_venue', { required: 'Please select an event type' })} placeholder='Enter Location /  Vanue Name' />
                             </div>
-                            {errors.venue && (
-                                <div className="error-message">{errors.venue.message}</div>
+                            {errors.preferred_venue && (
+                                <div className="error-message">{errors.preferred_venue.message}</div>
                             )}
                         </div>
                         <div className="form-group">
-                            <label htmlFor="" className="label-text">Is this a ticketed Event?</label>
+                            <label htmlFor="" className="label-text">Is this a private Event?</label>
                             <div className="d-flex gap-2">
                                 <div className="cap-check">
-                                    <input type="radio" {...register('ticketedEvent', { required: 'Please select an event type' })} name="ticketedEvent" value="yes" id="yes" />
+                                    <input type="radio" {...register('ticketed_event', { required: 'Please select an event type' })} name="ticketed_event" value="yes" id="yes" />
                                     <label htmlFor="yes">
                                         <span>YES</span>
                                     </label>
                                 </div>
                                 <div className="cap-check">
-                                    <input type="radio" {...register('ticketedEvent', { required: 'Please select an event type' })} name='ticketedEvent' value="no" id="no" />
+                                    <input type="radio" {...register('ticketed_event', { required: 'Please select an event type' })} name='ticketed_event' value="no" id="no" />
                                     <label htmlFor="no">
                                         <span>NO</span>
                                     </label>
                                 </div>
                             </div>
-                            {errors.ticketedEvent && (
-                                <div className="error-message">{errors.ticketedEvent.message}</div>
+                            {errors.ticketed_event && (
+                                <div className="error-message">{errors.ticketed_event.message}</div>
                             )}
                         </div>
                     </div>

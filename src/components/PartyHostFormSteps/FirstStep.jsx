@@ -38,73 +38,73 @@ const FirstStep = ({handleChange}) => {
                 </div>
                 <div className="row mt-4 row-gap-20">
                     <div className="col-12">
-                    {errors.eventType && (
-                        <div className="error-message">{errors.eventType.message}</div>
+                    {errors.event_type && (
+                        <div className="error-message">{errors.event_type.message}</div>
                     )}
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Get Together" {...register('eventType', { required: 'Please select an event type' })}   id="p1" />
+                            <input type="radio" value="Intimate Gatherings " {...register('event_type', { required: 'Please select an event type' })}   id="p1" />
                             <label htmlFor="p1">
                                 <div className="ic">
                                     <Image src={p1} alt="" />
                                 </div>
-                                <span>Get Together</span>
+                                <span>Intimate Gatherings </span>
                             </label>
                         </div>
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Corporate Event" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="p2" />
+                            <input type="radio" value="Special Occasions" name="party type" {...register('event_type', { required: 'Please select an event type' })}  id="p2" />
                             <label htmlFor="p2">
                                 <div className="ic">
                                     <Image src={p2} alt="" />
                                 </div>
-                                <span>Corporate Event</span>
+                                <span>Special Occasions</span>
                             </label>
                         </div>
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Nature Hikes" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="p3" />
+                            <input type="radio" value="Live Festivals" name="party type" {...register('event_type', { required: 'Please select an event type' })}  id="p3" />
                             <label htmlFor="p3">
                                 <div className="ic">
                                     <Image src={p3} alt="" />
                                 </div>
-                                <span>Nature Hikes</span>
+                                <span>Live Festivals </span>
                             </label>
                         </div>
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Get Together" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="p4" />
+                            <input type="radio" value="Wellness Retreats" name="party type" {...register('event_type', { required: 'Please select an event type' })}  id="p4" />
                             <label htmlFor="p4">
                                 <div className="ic">
                                     <Image src={p4} alt="" />
                                 </div>
-                                <span>Get Together</span>
+                                <span>Wellness Retreats</span>
                             </label>
                         </div>
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Corporate Event" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="p5" />
+                            <input type="radio" value="Weekend Excursions" name="party type" {...register('event_type', { required: 'Please select an event type' })}  id="p5" />
                             <label htmlFor="p5">
                                 <div className="ic">
                                     <Image src={p5} alt="" />
                                 </div>
-                                <span>Corporate Event</span>
+                                <span>Weekend Excursions </span>
                             </label>
                         </div>
                     </div>
                     <div className="col-lg-4 col-12">
                         <div className="cus-check">
-                            <input type="radio" value="Nature Hikes" name="party type" {...register('eventType', { required: 'Please select an event type' })}  id="p6" />
+                            <input type="radio" value="Secret Suppers" name="party type" {...register('event_type', { required: 'Please select an event type' })}  id="p6" />
                             <label htmlFor="p6">
                                 <div className="ic">
                                     <Image src={p6} alt="" />
                                 </div>
-                                <span>Nature Hikes</span>
+                                <span>Secret Suppers</span>
                             </label>
                         </div>
                     </div>

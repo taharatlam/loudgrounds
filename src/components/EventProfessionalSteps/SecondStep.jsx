@@ -32,7 +32,7 @@ const SecondStep = () => {
                 <div className="row">
                     <div className="col-12">
                         <h3 className="sec-head sm text-center">
-                        Tell us more about you?               
+                        Tell us more about you?              
                         </h3>
                     </div>
                 </div>
@@ -42,29 +42,29 @@ const SecondStep = () => {
                             <label htmlFor="" className="label-text">Business Type</label>
                             <div className="d-flex gap-2">
                                 <div className="cap-check">
-                                    <input type="radio" {...register('businessType', { required: 'Please select an event type' })} name="businessType" value="Freelancer" id="yes" />
+                                    <input type="radio" {...register('business_type', { required: 'Please select an event type' })} name="business_type" value="Freelancer" id="yes" />
                                     <label htmlFor="yes">
                                         <span>Freelancer</span>
                                     </label>
                                 </div>
                                 <div className="cap-check">
-                                    <input type="radio" {...register('businessType', { required: 'Please select an event type' })} name='businessType' value="Registered Company" id="no" />
+                                    <input type="radio" {...register('business_type', { required: 'Please select an event type' })} name='business_type' value="Registered Company" id="no" />
                                     <label htmlFor="no">
                                         <span>Registered Company</span>
                                     </label>
                                 </div>
                             </div>
-                            {errors.businessType && (
-                                <div className="error-message">{errors.businessType.message}</div>
+                            {errors.business_type && (
+                                <div className="error-message">{errors.business_type.message}</div>
                             )}
                         </div>
                         <div className="form-group">
                             <label htmlFor="" className="label-text">Company / Brand Name</label>
                             <div className="inp-grp">
-                                <input type="text" {...register('companyName', { required: 'Please select an event type' })} placeholder='Enter Name' />
+                                <input type="text" {...register('comp_name', { required: 'Please select an event type' })} placeholder='Enter Name' />
                             </div>
-                            {errors.companyName && (
-                                <div className="error-message">{errors.companyName.message}</div>
+                            {errors.comp_name && (
+                                <div className="error-message">{errors.comp_name.message}</div>
                             )}
                         </div>
                         <div className="form-group">

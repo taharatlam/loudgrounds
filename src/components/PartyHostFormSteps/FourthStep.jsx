@@ -36,7 +36,8 @@ const FourthStep = () => {
         "MC",
         "Videographer",
         "Rentals",
-        "Marketing"
+        "Marketing",
+        "Others",
     ]
 
   return (
@@ -46,7 +47,7 @@ const FourthStep = () => {
                 <div className="row">
                     <div className="col-12">
                         <h3 className="sec-head sm text-center">
-                        What all support do you need for the event?           
+                        Which service providers would you need for the event?       
                         </h3>
                     </div>
                 </div>
@@ -57,7 +58,7 @@ const FourthStep = () => {
                                 data && data.map((item,index)=>{
                                     return(
                                     <div className="tg-wrap" key={index}>
-                                        <input type="checkbox" {...register('providerNeed', { required: 'Please select an event type' })} value={item} id={'count'+index} />
+                                        <input type="checkbox" {...register('support_needed', { required: 'Please select an event type' })} value={item} id={'count'+index} />
                                         <label htmlFor={'count'+index}>{item}</label>
                                     </div>
                                     )

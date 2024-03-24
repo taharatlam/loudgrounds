@@ -34,20 +34,20 @@ const EventCard = () => {
                 <Image src={img} alt="" />
             </div>
             <div className="event-det">
-                <h3>LightFox Night Party</h3>
-                <p>Office Party</p>
+                <h3>LOVEMAKERS</h3>
+                <p>Live Festival</p>
                 <ul className="ott-list">
                     <li>
                         <Image src={cal} alt="" />
-                        <span>20 Jun 2024</span>
+                        <span>TBA</span>
                     </li>
                     <li>
                         <Image src={clock} alt="" />
-                        <span>9:00 AM - 12:00 PM</span>
+                        <span>6:00PM - 1:00AM</span>
                     </li>
                     <li>
                         <Image src={loc} alt="" />
-                        <span>Khasab, Oman</span>
+                        <span>Dubai, UAE </span>
                     </li>
                 </ul>
             </div>

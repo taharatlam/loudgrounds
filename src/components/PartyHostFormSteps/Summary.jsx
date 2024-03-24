@@ -116,7 +116,7 @@ const Summary = () => {
                                          Thank you for submitting your request
                                      </h3>
                                      <p className="para mb-5">
-                                     Our Team will reach out to you for further details. For any further queries
+                                    Our Team will reach out to you for further details. For any further queries, you can reach us at
                                      </p>
                                      <h3>You can reach us at:</h3>
                                      <ul className="soc-list justify-content-center pl-0">
